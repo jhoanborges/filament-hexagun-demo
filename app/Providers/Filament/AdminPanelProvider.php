@@ -39,8 +39,9 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\FilamentInfoWidget::class,
             ])
             ->unsavedChangesAlerts()
-            ->brandLogo(fn () => view('filament.app.logo'))
-            ->brandLogoHeight('1.25rem')
+            ->brandLogo(asset('img/logo.png'))
+            //->brandLogo(fn () => view('filament.app.logo'))
+            ->brandLogoHeight('3.25rem')
             ->navigationGroups([
                 'Shop',
                 'Blog',
