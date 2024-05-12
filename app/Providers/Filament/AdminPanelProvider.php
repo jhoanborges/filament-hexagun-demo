@@ -39,6 +39,7 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\FilamentInfoWidget::class,
             ])
             ->unsavedChangesAlerts()
+            ->favicon(asset('favicon.ico'))
             ->brandLogo(asset('img/logo.png'))
             //->brandLogo(fn () => view('filament.app.logo'))
             ->brandLogoHeight('3.25rem')
